@@ -83,6 +83,16 @@ public class MainActivity extends AppCompatActivity {
 
         switch (view.getId()) {
             case R.id.btn1:
+                if (mInterstitialAd != null) {
+
+                    mInterstitialAd.show(MainActivity.this);
+
+                } else {
+                    Log.d("AdMob", "The interstitial ad wasn't ready yet.");
+                    Intent intent = new Intent(MainActivity.this, SpinnerActivity.class);
+                    startActivity(intent);
+                }
+                break;
             case R.id.btn2:
 
                 if (mInterstitialAd != null) {
