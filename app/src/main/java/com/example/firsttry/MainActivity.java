@@ -30,16 +30,10 @@ public class MainActivity extends AppCompatActivity {
         MobileAds.initialize(this, new OnInitializationCompleteListener() {
             @Override
             public void onInitializationComplete(InitializationStatus initializationStatus) {
-                createPersonalizedAd();
+
             }
         });
-    }
-
-    private void createPersonalizedAd() {
         AdRequest adRequest = new AdRequest.Builder().build();
-        createInterstitialAd(adRequest);
-    }
-    private void createInterstitialAd(AdRequest adRequest){
         InterstitialAd.load(this,"ca-app-pub-3940256099942544/1033173712", adRequest, new InterstitialAdLoadCallback() {
             @Override
             public void onAdLoaded(@NonNull InterstitialAd interstitialAd) {
@@ -52,8 +46,8 @@ public class MainActivity extends AppCompatActivity {
                     public void onAdDismissedFullScreenContent() {
                         // Called when fullscreen content is dismissed.
                         Log.d("AdMob", "The ad was dismissed.");
-                        Intent intent = new Intent(MainActivity.this, activity1.class);
-                        startActivity(intent);
+
+
                     }
 
                     @Override
@@ -69,6 +63,8 @@ public class MainActivity extends AppCompatActivity {
                         // show it a second time.
                         mInterstitialAd = null;
                         Log.d("AdMob", "The ad was shown.");
+
+
                     }
                 });
             }
@@ -80,24 +76,19 @@ public class MainActivity extends AppCompatActivity {
                 mInterstitialAd = null;
             }
         });
+
     }
-//zbe
+
     public void guide(View view) {
+
         switch (view.getId()) {
             case R.id.btn1:
-
-                if (mInterstitialAd != null) {
-                    mInterstitialAd.show(MainActivity.this);
-                } else {
-                    Log.d("AdMob", "The interstitial ad wasn't ready yet.");
-                    Intent intent = new Intent(MainActivity.this, activity1.class);
-                    startActivity(intent);
-                }
-                break;
             case R.id.btn2:
 
                 if (mInterstitialAd != null) {
+
                     mInterstitialAd.show(MainActivity.this);
+
                 } else {
                     Log.d("AdMob", "The interstitial ad wasn't ready yet.");
                     Intent intent = new Intent(MainActivity.this, activity1.class);
