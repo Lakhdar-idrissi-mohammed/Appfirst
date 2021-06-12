@@ -32,9 +32,10 @@
         app:backgroundTint="@color/tgt"
         app:layout_constraintBottom_toTopOf="@+id/btn3"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_bias="0.504"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.35" />
 
     <Button
         android:id="@+id/btn3"
@@ -46,11 +47,11 @@
         android:text="انت محظوظ!"
         android:textSize="20sp"
         app:backgroundTint="@color/tgt"
-        app:layout_constraintBottom_toTopOf="@+id/btn2"
+        app:layout_constraintBottom_toTopOf="@+id/gifImageView2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn1" />
+        app:layout_constraintTop_toBottomOf="@+id/btn2" />
 
     <Button
         android:id="@+id/btn2"
@@ -62,20 +63,22 @@
         android:text="مجوهرات مجانا"
         android:textSize="20sp"
         app:backgroundTint="@color/tgt"
-        app:layout_constraintBottom_toTopOf="@+id/gifImageView2"
+        app:layout_constraintBottom_toTopOf="@+id/btn3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn3" />
+        app:layout_constraintTop_toBottomOf="@+id/btn1" />
 
     <pl.droidsonroids.gif.GifImageView
         android:id="@+id/gifImageView2"
         android:layout_width="411dp"
         android:layout_height="150dp"
+        android:layout_marginBottom="24dp"
         android:src="@drawable/diamond"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHeight_percent=".15"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent" />
 
 
