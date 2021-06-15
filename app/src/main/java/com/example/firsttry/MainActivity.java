@@ -64,7 +64,6 @@ public class MainActivity extends AppCompatActivity {
                         mInterstitialAd = null;
                         Log.d("AdMob", "The ad was shown.");
 
-
                     }
                 });
             }
@@ -83,43 +82,34 @@ public class MainActivity extends AppCompatActivity {
 
         switch (view.getId()) {
             case R.id.btn1:
+                Intent intent = new Intent(MainActivity.this, activity1.class);
+                startActivity(intent);
                 if (mInterstitialAd != null) {
-                    Intent intent = new Intent(MainActivity.this, SpinnerActivity.class);
-                    startActivity(intent);
                     mInterstitialAd.show(MainActivity.this);
-
-
                 } else {
                     Log.d("AdMob", "The interstitial ad wasn't ready yet.");
-
-
                 }
                 break;
             case R.id.btn2:
-
+                intent = new Intent(MainActivity.this, SpinnerActivity.class);
+                startActivity(intent);
                 if (mInterstitialAd != null) {
-                    Intent intent = new Intent(MainActivity.this, activity1.class);
-                    startActivity(intent);
                     mInterstitialAd.show(MainActivity.this);
-
-
                 } else {
                     Log.d("AdMob", "The interstitial ad wasn't ready yet.");
-
                 }
                 break;
-            case R.id.btn3:
-
+            /*case R.id.btn3:
+                intent = new Intent(MainActivity.this, act.class);
+                startActivity(intent);
                 if (mInterstitialAd != null) {
                     mInterstitialAd.show(MainActivity.this);
-
-
                 } else {
                     Log.d("AdMob", "The interstitial ad wasn't ready yet.");
-
                 }
                 break;
 
+             */
         }
     }
 }
