@@ -33,7 +33,7 @@ public class GuideAdapter extends RecyclerView.Adapter<GuideAdapter.ViewHolder> 
         ViewHolder viewHolder = new ViewHolder(view);
         return viewHolder;
     }
-
+//nikzbe
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
         final GuideData guideDataList = guideData[position];
