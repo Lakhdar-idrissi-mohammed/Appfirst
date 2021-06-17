@@ -5,87 +5,79 @@
     android:id="@+id/relativeLayout2"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/bzi"
+    android:background="@drawable/bg_app"
     android:padding="0dp"
     tools:context=".MainActivity">
-
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="wrap_content"
-        android:layout_height="256dp"
-        android:scaleType="fitXY"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHeight_percent=".32"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/hadi" />
 
     <Button
         android:id="@+id/btn1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
         android:width="300dp"
         android:height="60dp"
+        android:fontFamily="@font/cairo_bold"
         android:onClick="guide"
         android:text="مرشد"
         android:textColor="@color/white"
         android:textSize="20sp"
-        android:textStyle="bold|italic"
-        app:backgroundTint="@color/mediumpurple"
+        android:textStyle="bold"
+        app:backgroundTint="@color/rwise"
         app:layout_constraintBottom_toTopOf="@+id/btn3"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView"
-        app:layout_constraintVertical_bias="0.35" />
-
-    <Button
-        android:id="@+id/btn3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:width="300dp"
-        android:height="60dp"
-        android:onClick="guide"
-        android:text="انت محظوظ!"
-        android:textColor="@color/white"
-        android:textSize="20sp"
-        android:textStyle="bold|italic"
-        app:backgroundTint="@color/mediumpurple"
-        app:layout_constraintBottom_toTopOf="@+id/gifImageView2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn2" />
+        app:layout_constraintTop_toBottomOf="@+id/gifImageView2"
+        app:layout_constraintVertical_bias="0.232" />
 
     <Button
         android:id="@+id/btn2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="160dp"
         android:width="300dp"
         android:height="60dp"
+        android:fontFamily="@font/cairo_bold"
         android:onClick="guide"
         android:text="مجوهرات مجانا"
         android:textColor="@color/white"
         android:textSize="20sp"
         android:textStyle="bold|italic"
-        app:backgroundTint="@color/mediumpurple"
-        app:layout_constraintBottom_toTopOf="@+id/btn3"
+        app:backgroundTint="@color/rwise"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btn1" />
 
-    <pl.droidsonroids.gif.GifImageView
-        android:id="@+id/gifImageView2"
-        android:layout_width="411dp"
-        android:layout_height="150dp"
-        android:layout_marginBottom="44dp"
-        android:src="@drawable/diamond"
+    <Button
+        android:id="@+id/btn3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="108dp"
+        android:width="300dp"
+        android:height="60dp"
+        android:fontFamily="@font/cairo_bold"
+        android:onClick="guide"
+        android:text="انت محظوظ!"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold|italic"
+        app:backgroundTint="@color/rwise"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHeight_percent=".15"
-        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/gifImageView2"
+        android:layout_width="407dp"
+        android:layout_height="256dp"
+        android:src="@drawable/diamond2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent=".15"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
