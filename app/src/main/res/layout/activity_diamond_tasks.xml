@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fdfffc"
+    tools:context=".DiamondTasks">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_app"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:padding="12dp">
+
+                <Button
+                    android:id="@+id/ddBtn"
+                    android:onClick="guide"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="6dp"
+                    android:layout_weight=".5"
+                    android:text="💎  0"
+                    android:textSize="17dp"
+                    app:backgroundTint="#D52DB0" />
+
+                <Button
+                    android:id="@+id/claimBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="6dp"
+                    android:layout_weight="0.5"
+                    android:enabled="false"
+                    android:fontFamily="@font/cairo"
+                    android:onClick="guide"
+                    android:shadowColor="#9C939F"
+                    android:text="شحن"
+                    android:textColor="#fff"
+                    android:textSize="17dp"
+                    app:backgroundTint="#706D77" />
+
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/instaBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/radius"
+                android:fontFamily="@font/cairo"
+                android:gravity="center_vertical"
+                android:minHeight="70dp"
+                android:onClick="guide"
+                android:text=" ▶   تابعني على انستغرام  800  جوهرة  "
+                android:textDirection="rtl"
+                android:textSize="17dp"
+                app:backgroundTint="#D52DB0" />
+
+
+            <Button
+                android:id="@+id/ytBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/radius"
+                android:fontFamily="@font/cairo"
+                android:gravity="center_vertical"
+                android:minHeight="70dp"
+                android:onClick="guide"
+                android:text=" ▶  تابعني على يوتيوب   800  جوهرة  "
+                android:textDirection="rtl"
+                android:textSize="17dp"
+                app:backgroundTint="#D52DB0" />
+
+            <Button
+                android:id="@+id/task1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/radius"
+                android:fontFamily="@font/cairo"
+                android:gravity="center_vertical"
+                android:minHeight="70dp"
+                android:onClick="guide"
+                android:text=" ▶ المهمة 1 شاهد الإعلان "
+                android:textDirection="rtl"
+                android:textSize="17dp"
+                app:backgroundTint="#D52DB0" />
+
+            <Button
+                android:id="@+id/task2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/radius"
+                android:fontFamily="@font/cairo"
+                android:gravity="center_vertical"
+                android:minHeight="70dp"
+                android:onClick="guide"
+                android:text=" ▶ المهمة 2 شاهد الإعلان "
+                android:textDirection="rtl"
+                android:textSize="17dp"
+                app:backgroundTint="#D52DB0" />
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
