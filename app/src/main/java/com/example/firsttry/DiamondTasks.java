@@ -12,7 +12,6 @@ import android.widget.Button;
 public class DiamondTasks extends AppCompatActivity {
     private int diamondsCount;
     Button diamondField;
-    Button dd;
 
     public int getDiamondsCount() {
         return diamondsCount;
@@ -28,17 +27,6 @@ public class DiamondTasks extends AppCompatActivity {
         setContentView(R.layout.activity_diamond_tasks);
         diamondsCount=0;
         diamondField = findViewById(R.id.ddBtn);
-//        dd= (Button) findViewById(R.id.instaBtn);
-//        dd.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                String url = "https://www.instagram.com/med_lakhdar_idrissi/";
-//
-//                Intent j = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
-//                startActivity(j);
-//            }
-//        });
-
 
     }
     public void guide(View view) {

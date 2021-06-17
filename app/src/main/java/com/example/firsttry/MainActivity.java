@@ -91,7 +91,7 @@ public class MainActivity extends AppCompatActivity {
                 }
                 break;
             case R.id.btn2:
-                intent = new Intent(MainActivity.this, SpinnerActivity.class);
+                intent = new Intent(MainActivity.this, DiamondTasks.class);
                 startActivity(intent);
                 if (mInterstitialAd != null) {
                     mInterstitialAd.show(MainActivity.this);
