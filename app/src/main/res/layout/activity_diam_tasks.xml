@@ -4,8 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#fdfffc"
-    tools:context=".DiamondTasks">
+    tools:context=".DiamTasks">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -29,7 +28,7 @@
 
                 <Button
                     android:id="@+id/ddBtn"
-                    android:onClick="guide"
+                    android:onClick="guid"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_margin="6dp"
@@ -46,7 +45,7 @@
                     android:layout_weight="0.5"
                     android:enabled="false"
                     android:fontFamily="@font/cairo"
-                    android:onClick="guide"
+                    android:onClick="guid"
                     android:shadowColor="#9C939F"
                     android:text="شحن"
                     android:textColor="#fff"
@@ -72,12 +71,11 @@
                 android:fontFamily="@font/cairo"
                 android:gravity="center_vertical"
                 android:minHeight="70dp"
-                android:onClick="guide"
+                android:onClick="guid"
                 android:text=" ▶   تابعني على انستغرام  800  جوهرة  "
                 android:textDirection="rtl"
                 android:textSize="17dp"
                 app:backgroundTint="#D52DB0" />
-
 
             <Button
                 android:id="@+id/ytBtn"
@@ -91,7 +89,7 @@
                 android:fontFamily="@font/cairo"
                 android:gravity="center_vertical"
                 android:minHeight="70dp"
-                android:onClick="guide"
+                android:onClick="guid"
                 android:text=" ▶  تابعني على يوتيوب   800  جوهرة  "
                 android:textDirection="rtl"
                 android:textSize="17dp"
@@ -109,7 +107,7 @@
                 android:fontFamily="@font/cairo"
                 android:gravity="center_vertical"
                 android:minHeight="70dp"
-                android:onClick="guide"
+                android:onClick="guid"
                 android:text=" ▶ المهمة 1 شاهد الإعلان "
                 android:textDirection="rtl"
                 android:textSize="17dp"
@@ -127,7 +125,7 @@
                 android:fontFamily="@font/cairo"
                 android:gravity="center_vertical"
                 android:minHeight="70dp"
-                android:onClick="guide"
+                android:onClick="guid"
                 android:text=" ▶ المهمة 2 شاهد الإعلان "
                 android:textDirection="rtl"
                 android:textSize="17dp"
