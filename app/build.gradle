@@ -38,8 +38,9 @@ dependencies {
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
     implementation 'com.google.android.gms:play-services-ads:20.2.0'
-//    implementation 'com.google.ads.mediation:facebook:6.5.0.0'
-//    implementation 'com.facebook.android:audience-network-sdk:6.2.0'
-//    implementation 'com.facebook.android:facebook-android-sdk:8.1.0'
+    implementation 'com.google.ads.mediation:facebook:6.5.0.0'
+    implementation 'com.facebook.android:audience-network-sdk:6.2.0'
+    implementation 'com.facebook.android:facebook-android-sdk:8.1.0'
     implementation 'pl.droidsonroids.gif:android-gif-drawable:1.2.19'
+    implementation 'com.github.mmoamenn:LuckyWheel_Android:0.3.0'
 }

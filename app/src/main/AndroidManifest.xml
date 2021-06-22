@@ -10,7 +10,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.FirstTry">
+
+
+
         <activity android:name=".DiamTasks"></activity>
+
+
+        <activity android:name=".popup1Activity" />
         <activity android:name=".SpinnerActivity" />
         <activity android:name=".activity1" />
         <activity android:name=".MainActivity">

@@ -7,6 +7,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.widget.Toast;
 
 import com.google.android.gms.ads.AdError;
 import com.google.android.gms.ads.AdRequest;
@@ -91,25 +92,30 @@ public class MainActivity extends AppCompatActivity {
                 }
                 break;
             case R.id.btn2:
-                intent = new Intent(MainActivity.this, DiamondTasks.class);
-                startActivity(intent);
+                Intent intent2 = new Intent(MainActivity.this, DiamTasks.class);
+                startActivity(intent2);
                 if (mInterstitialAd != null) {
                     mInterstitialAd.show(MainActivity.this);
                 } else {
-                    Log.d("AdMob", "The interstitial ad wasn't ready yet.");
+                    Log.d("AdMob", "The interstitial ad wasn't ready yett.");
                 }
                 break;
-            /*case R.id.btn3:
-                intent = new Intent(MainActivity.this, act.class);
-                startActivity(intent);
-                if (mInterstitialAd != null) {
-                    mInterstitialAd.show(MainActivity.this);
-                } else {
-                    Log.d("AdMob", "The interstitial ad wasn't ready yet.");
+            case R.id.btn3:
+                try {
+                    Intent intent3 = new Intent(MainActivity.this, SpinnerActivity.class);
+                    startActivity(intent3);
+                }catch(Exception e){
+                    Toast.makeText(MainActivity.this, String.valueOf(e), Toast.LENGTH_SHORT).show();
+
                 }
+
+//                if (mInterstitialAd != null) {
+//                    mInterstitialAd.show(MainActivity.this);
+//                } else {
+//                    Log.d("AdMob", "The interstitial ad wasn't ready yet.");
+//                }
                 break;
 
-             */
         }
     }
 }

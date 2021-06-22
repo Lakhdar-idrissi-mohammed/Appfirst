@@ -25,4 +25,7 @@
     <color name="ORANGEDIALI">#ED9903</color>
     <color name="almostwhite">#DDDCDC</color>
     <color name="orangenase3">#F54703</color>
+    <color name="spinnerRed">#f72585</color>
+    <color name="spinnerOrange">#b5179e</color>
+    <color name="spinnerYellow">#7209b7</color>
 </resources>

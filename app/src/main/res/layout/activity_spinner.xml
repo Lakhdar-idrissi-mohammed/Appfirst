@@ -5,17 +5,84 @@
     android:id="@+id/relativeLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/bg_app"
     tools:context=".SpinnerActivity"
     tools:ignore="MissingClass">
 
+    <com.bluehomestudio.luckywheel.LuckyWheel
+        android:id="@+id/luckyWheel"
+        android:layout_width="350dp"
+        android:layout_height="350dp"
+        android:foregroundGravity="center_vertical|center|center_horizontal"
+        app:background_color="#b5179e"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </com.bluehomestudio.luckywheel.LuckyWheel>
+
+
     <Button
-        android:id="@+id/button15"
+        android:id="@+id/WheelBtn"
+        android:layout_width="130dp"
+        android:layout_height="60dp"
+        android:fontFamily="@font/cairo"
+        android:gravity="center_horizontal"
+        android:onClick="BtnClick"
+        android:padding="5dp"
+        android:text="إبدأ"
+        android:textAlignment="center"
+        android:textDirection="rtl"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:backgroundTint="#D52DB0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/luckyWheel" />
+
+    <TextView
+        android:id="@+id/textView5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="320dp"
-        android:text="Button"
+        android:fontFamily="@font/cairo"
+        android:shadowColor="#8E24AA"
+        android:text="جرب حظك !"
+        android:textColor="#FBFBFB"
+        android:textColorHighlight="#8E24AA"
+        android:textDirection="rtl"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/luckyWheel"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.51"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="409dp"
+        android:layout_height="73dp"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/spinnerDiamCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="6dp"
+            android:text="💎  0"
+            android:textSize="17dp"
+            app:backgroundTint="#D52DB0" />
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="8" />
+    </LinearLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
